@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #DEFFDE;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.epic-header {
+    margin: 0px auto 20px auto;
+
+    font-size: 50px;
+    text-align: center;
+    font-family: "segoe ui";
+    color: #AF6FFB;
+}
+
+.app-container {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 5px;
+
+    border-radius: 25px;
+
+    background-color: #A8E0FB;
+}
+
+.input-section {
+    background-color: #98E2E3;
+    min-height: 200px;
+    width: 80%;
+    margin: 20px auto;
+
+    border-radius: 20px;
+    border: 5px solid #98E3B1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-elem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons-elem button {
+    width: 200px;
+    font-size: 25px;
+    margin: 0px 20px 10px 20px;
+
+    border-radius: 20px;
+}
+
+.left-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.input-elem {
+    margin: 20px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+}
+
+.input-elem input {
+    width: 100%;
+    font-size: 20px;
+}
+
+.input-elem textarea {
+    width: 100%;
+    font-size: 20px;
+    height: 100px;
+}
+
+.input-elem label {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: black;
+}
+
+.output-section {
+    background-color: #B4FAE3;
+    min-height: 100px;
+    width: 80%;
+    margin: 20px auto;
+
+    border-radius: 20px;
+    border: 5px solid #98E3B1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.output-section textarea {
+    width: 100%;
+    font-size: 20px;
+    height: 200px;
+
+    border-radius: 20px;
+}

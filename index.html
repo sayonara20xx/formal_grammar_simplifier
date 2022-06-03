@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JS IS CANCER</title>
+</head>
+<body>
+    <p class="epic-header">ULTIMATE GRAMMAR SIMPIFIER</p>
+
+    <div class="app-container">
+        <div id="app">
+
+            <div class="input-section">
+                <div class="left-input">
+                    <div class="input-elem">
+                        <label for="">Начальный символ</label>
+                        <input type="text" v-model="s_input">
+                    </div>
+                    <div class="input-elem">
+                        <label for="">Алфавит терминалов</label>
+                        <input type="text" v-model="term_input">
+                    </div>
+                    <div class="input-elem">
+                        <label for="">Алфавит нетерминалов</label>
+                        <input type="text" v-model="nonterm_input">
+                    </div>
+                    <div class="input-elem">
+                        <label for="">Множество правил</label>
+                        <textarea v-model="rules_input" cols="30"></textarea>
+                    </div>
+                    <div class="buttons-elem">
+                        <button @click="process()"><p>Упростить!</p></button>
+                        <button @click="insert_default()"><p>Вставить дефолтные</p></button>
+                    </div>
+                </div>
+                
+                <div class="right-input"></div>
+            </div>
+            <div class="output-section">
+                <textarea v-model="res_output" cols="30"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="./main.js"></script>
